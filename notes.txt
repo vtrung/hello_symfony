@@ -1,0 +1,50 @@
+::Learning Resource::
+https://knpuniversity.com/screencast/symfony
+https://www.lynda.com/PHP-tutorials/Learning-Symfony-3/557776-2.html
+
+
+::Installing::
+https://symfony.com/doc/current/setup.html
+
+
+::Running::
+* Change your current directory to /Users/Ving/PhpProjects/hello_symfony
+
+    * Configure your application in app/config/parameters.yml file.
+
+    * Run your application:
+        1. Execute the php bin/console server:run command.
+        2. Browse to the http://localhost:8000 URL.
+
+    * Read the documentation at http://symfony.com/doc
+
+
+::Controllers::
+
+
+
+::Symfony console::
+php bin/console
+php bin/console debug:router
+
+
+::Useful Information::
+$this->container is library object for services
+$this->container->get("service-name") returns the service-name service
+
+mark /var/cache as 'excluded' to help phpStorm with autocomplete
+
+
+
+:: Twig ::
+twig.sensiolabs.org
+
+{{ }} say something
+{% %} do something
+{{ dump() }} print all variables
+
+    -Templating
+    https://knpuniversity.com/screencast/symfony/twig-layouts#play
+    
+    -Appending blocks
+        - add {{ parent() }} grab original block content, then append new content around it
